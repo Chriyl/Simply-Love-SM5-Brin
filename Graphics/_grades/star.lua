@@ -101,11 +101,11 @@ t[#t+1] = LoadActor("./assets/goldstar (stretch).png")..{
 		elseif pss:GetTapNoteScores('TapNoteScore_W3') == 1 then
 			-- Black flag; one great
 			self:visible(true)
-			self:diffuse(Color.Black)
+			--self:diffuse(Color.Black)
 		elseif pss:GetTapNoteScores('TapNoteScore_W2') == 1 then
 			-- Lol; one ex
 			self:visible(true)
-			self:diffuse(Color.Black)
+			--self:diffuse(Color.Black)
 			self:sleep(2)
 			self:queuecommand('Animate')
 		else

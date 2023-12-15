@@ -23,31 +23,31 @@ end
 return Def.ActorFrame{
 	--top middle
 	LoadActor("star.lua", pss)..{
-		OnCommand=function(self) self:x(0):y(-54):zoom(0.35):pulse():effectmagnitude(1,0.9,0):sleep(5):queuecommand("Spin") end,
+		OnCommand=function(self) self:x(0):y(-54):zoom(0.35):pulse():effectmagnitude(1,0.9,0) end,
 		SpinCommand=function(self) Spin(self) end
 	},
 
 	--top left
 	LoadActor("star.lua", pss)..{
-		OnCommand=function(self) self:x(-52):y(-16):zoom(0.35):pulse():effectmagnitude(1,0.9,0):sleep(60):queuecommand("Spin") end,
+		OnCommand=function(self) self:x(-52):y(-16):zoom(0.35):pulse():effectmagnitude(1,0.9,0) end,
 		SpinCommand=function(self) Spin(self) end
 	},
 
 	--top right
 	LoadActor("star.lua", pss)..{
-		OnCommand=function(self) self:x(52):y(-16):zoom(0.35):effectoffset(0.2):pulse():effectmagnitude(0.9,1,0):sleep(3):queuecommand("Spin") end,
+		OnCommand=function(self) self:x(52):y(-16):zoom(0.35):effectoffset(0.2):pulse():effectmagnitude(0.9,1,0)end,
 		SpinCommand=function(self) Spin(self) end
 	},
 
 	-- bottom left
 	LoadActor("star.lua", pss)..{
-		OnCommand=function(self) self:x(-32):y(50):zoom(0.35):effectoffset(0.4):pulse():effectmagnitude(0.9,1,0):sleep(11):queuecommand("Spin") end,
+		OnCommand=function(self) self:x(-32):y(50):zoom(0.35):effectoffset(0.4):pulse():effectmagnitude(0.9,1,0) end,
 		SpinCommand=function(self) Spin(self) end
 	},
 
 	--  bottom right
 	LoadActor("star.lua", pss)..{
-		OnCommand=function(self) self:x(32):y(50):zoom(0.35):effectoffset(0.6):pulse():effectmagnitude(1,0.9,0):sleep(48):queuecommand("Spin") end,
+		OnCommand=function(self) self:x(32):y(50):zoom(0.35):effectoffset(0.6):pulse():effectmagnitude(1,0.9,0):sleep(48) end,
 		SpinCommand=function(self) Spin(self) end
 	}
 }
